@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Fredoka:wght@300;400&family=Hahmlet:wght@200;300;400&family=Lora:wght@400;500&family=Lustria&family=Nanum+Myeongjo:wght@400;700&family=Orbitron&family=Poppins:wght@200;300;400;600;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;300;400;500;600&family=Roboto:wght@300&family=Varela+Round&display=swap');
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #333;
+    width: 0%;
+    z-index: 100;
+    transition: width 0.2s ease-out;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+nav .progess-bar-container img {
+    width: 50px;
+}
+
+nav .nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 70px;
+}
+
+#logo {
+   cursor: pointer;
+   transition: transform 0.15s ease-in;
+}
+
+#logo:hover {
+    /* transform: scale(1.05);
+    transition: transform 0.15s ease-in; */
+    filter: brightness(95%);
+}
+
+#dot-logo {
+    width: 50px;
+    position: absolute;
+}
+
+#name-logo {
+    width: 100px;
+    position: absolute;
+
+}
+
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#nav-menu.exit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-menu.exit i{
+    transform: scale(0.8);
+}
+
+
+
+#nav-menu li {
+    display: inline;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #333;
+    transition: transform 0.15s ease;
+    position: relative;
+}
+
+
+#nav-menu li .wave {
+    position: absolute;
+    left: 33%;
+    top: 17px;
+    opacity: 0;
+}
+
+#nav-menu.exit li {
+    font-size: 40px;
+}
+
+#nav-menu.exit li:hover {
+    transform: rotate(180deg);
+}
+
+.show-wave {
+    opacity: 1 !important;
+}
+
+#nav-menu li:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: transform 0.15s ease;
+}
